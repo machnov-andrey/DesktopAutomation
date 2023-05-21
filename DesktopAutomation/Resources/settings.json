@@ -1,0 +1,11 @@
+{
+  "platformName": "Windows",
+  "deviceName": "WindowsPC",
+  "wpsOfficePath": "",
+  "desktopPath": "Root",
+  "url": "http://127.0.0.1:4723",
+  "startAppTimeout": 3000,
+  "timeout": 20000,
+  "interval": 500,
+  "specialWait": 2000
+}
