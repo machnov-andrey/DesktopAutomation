@@ -11,7 +11,7 @@ namespace DesktopAutomation.Tests.Tests
         {
             var startScreen = new StartScreen(WpsOfficeDriver);
             startScreen.WaitForPageOpened();
-            startScreen.DocumentClick();
+            startScreen.CreateButton.Click();
 
             var createDocumentScreen = new CreateDocumentScreen(WpsOfficeDriver);
             createDocumentScreen.WaitForPageOpened();

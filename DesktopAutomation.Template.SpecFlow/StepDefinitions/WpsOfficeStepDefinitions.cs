@@ -46,7 +46,7 @@ namespace DesktopAutomation.Tests.StepDefinitions
         [When(@"I want to create document")]
         public void IWantToCreateDocument()
         {
-            StartScreen.DocumentClick();
+            StartScreen.CreateButton.Click();
         }
 
         [When(@"I choose empty document")]
