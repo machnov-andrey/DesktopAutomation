@@ -14,8 +14,8 @@ namespace DesktopAutomation.Tests.Screens
         public TextBox Spacing => new(By.Name("Sp_BeforePargraph"), "Текст-бокс 'Перед'", WebDriver);
         public Button Confirm => new(By.Name("Подтвердить"), "Кнопка 'Подтвердить'", WebDriver);
 
-        private int MoreLiningSpacingX = 1120;
-        private int MoreLiningSpacingY = 510;
+        private readonly int MoreLiningSpacingX = 1120;
+        private readonly int MoreLiningSpacingY = 510;
 
         public DocumentEditorScreen(WinAppDriverUtil driver): base(new TextBox(By.ClassName("KxWpsView"), 
             "Поле для ввода текста", driver), "Редактор документа", driver)
