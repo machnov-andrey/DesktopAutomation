@@ -18,6 +18,8 @@ namespace DesktopAutomation.Core.Utils
         public static string WpsOfficePath => GetValue<string>("wpsOfficePath");
         public static string DesktopPath => GetValue<string>("desktopPath");
         public static string Url => GetValue<string>("url");
+        public static string NativeWindowHandleAttribute => GetValue<string>("nativeWindowHandleAttribute");
+        public static string AppName => GetValue<string>("appName");
         public static int StartAppTimeout => GetValue<int>("startAppTimeout");
         public static int SpecialWait => GetValue<int>("specialWait");
         public static int Timeout => GetValue<int>("timeout");

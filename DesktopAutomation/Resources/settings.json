@@ -3,8 +3,10 @@
   "deviceName": "WindowsPC",
   "wpsOfficePath": "",
   "desktopPath": "Root",
+  "appName": "WPS Office",
+  "nativeWindowHandleAttribute": "NativeWindowHandle",
   "url": "http://127.0.0.1:4723",
-  "startAppTimeout": 3000,
+  "startAppTimeout": 1500,
   "timeout": 20000,
   "interval": 500,
   "specialWait": 2000
