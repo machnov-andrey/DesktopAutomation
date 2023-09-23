@@ -11,13 +11,6 @@ namespace DesktopAutomation.Tests.StepDefinitions
     {
         protected WinAppDriverUtil WpsOfficeDriver;
 
-        private readonly Dictionary<string, string> StartOptions = new()
-        {
-            {Options.PlatformName, ConfigManager.PlatformName },
-            {Options.DeviceName, ConfigManager.DeviceName },
-            {Options.App, ConfigManager.WpsOfficePath }
-        };
-
         private readonly Dictionary<string, string> DesktopOpions = new()
         {
             {Options.PlatformName, ConfigManager.PlatformName },
@@ -37,7 +30,7 @@ namespace DesktopAutomation.Tests.StepDefinitions
         [When(@"I launch WPS Office")]
         public void ILaunchWpsOffice()
         {
-            WpsOfficeDriver = CommonSteps.LaunchWpsOffice(StartOptions, DesktopOpions, WpsOfficeOptions);
+            WpsOfficeDriver = CommonSteps.LaunchWpsOffice(DesktopOpions, WpsOfficeOptions);
             StartScreen = new StartScreen(WpsOfficeDriver);
             CreateDocumentScreen = new CreateDocumentScreen(WpsOfficeDriver);
             DocumentEditorScreen = new DocumentEditorScreen(WpsOfficeDriver);
