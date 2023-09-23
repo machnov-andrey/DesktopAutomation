@@ -7,7 +7,7 @@ namespace DesktopAutomation.Tests.Screens
 {
     public class CreateDocumentScreen : BaseScreen
     {
-        private int EmptyDocumentX = 650;
+        private int EmptyDocumentX = 450;
         private int EmptyDocumentY = 400;   
 
         public CreateDocumentScreen(WinAppDriverUtil webDriver) : base(new Button(By.ClassName("KPromeNewDocsTab"), "Кнопка 'Мои шаблоны'",
